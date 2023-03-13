@@ -1,0 +1,36 @@
+header {
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+
+    a {
+        font-size: 24px;
+        line-height: 34px;
+        color: var(--primary-1);
+        &:nth-child(1) {
+            margin-right: 57px;
+        }
+        &.active {
+            border-bottom: 2px solid var(--primary-1);
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        img {
+            width: 140px;
+        }
+        a {
+            font-size: 16px;
+            line-height: 18px;
+            &:nth-child(1) {
+                margin-right: 1rem;
+            }
+        }
+    }
+}
