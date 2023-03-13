@@ -1,4 +1,4 @@
-import { useParams, redirect } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { Carousel } from "../../components/Carousel";
 import data from "../../data/data.json";
 import { Tag } from "../../components/Tag";
