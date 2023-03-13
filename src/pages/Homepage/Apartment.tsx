@@ -31,7 +31,7 @@ export const Apartment = () => {
             </p>
             <img
               src={rightApartment.host.picture}
-              alt={`${rightApartment.host.name} profil picture`}
+              alt={`${rightApartment.host.name} profil `}
             />
           </div>
           <div className="stars">

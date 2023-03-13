@@ -27,6 +27,16 @@
         right: 22px;
         transform: translateY(-50%);
     }
+    .pagination {
+        position: absolute;
+        z-index: 10;
+        left: 50%;
+        bottom: 25px;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+    }
 
 }
 

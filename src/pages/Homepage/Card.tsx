@@ -10,7 +10,7 @@ type CardPropsType = {
 export const Card: React.FC<CardPropsType> = ({ id, title, cover }) => {
   return (
     <article className="card">
-      <img src={cover} />
+      <img src={cover} alt={title} />
       <Link className="link" to={`/apartment/${id}`}>
         <h3>{title}</h3>
       </Link>

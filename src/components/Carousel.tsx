@@ -26,9 +26,10 @@ export const Carousel: React.FC<CarouselPropsType> = ({ pictures }) => {
 
   return (
     <div className="carousel">
-      <img onClick={handlePrevious} className="arrow-left" src={Arrow} alt="previous image" />
-      <img className="picture" src={pictures[imageNumber]} alt="apartment picture" />
-      <img onClick={handleNext} className="arrow-right" src={Arrow} alt="next image" />
+      <img onClick={handlePrevious} className="arrow-left" src={Arrow} alt="previous" />
+      <img className="picture" src={pictures[imageNumber]} alt="apartment" />
+      <img onClick={handleNext} className="arrow-right" src={Arrow} alt="next" />
+      <p className="pagination">{imageNumber + 1}/{pictures.length}</p>
     </div>
   );
 };
