@@ -1,14 +1,19 @@
-import { useParams } from "react-router-dom";
+import { useParams, redirect } from "react-router-dom";
 import { Carousel } from "../../components/Carousel";
 import data from "../../data/data.json";
 import { Tag } from "../../components/Tag";
-import { ReactComponent  as Star }  from "../../assets/images/star.svg";
+import { ReactComponent as Star } from "../../assets/images/star.svg";
 import { Dropdown } from "../../components/Dropdown";
 import { DropdownList } from "../../components/DropdownList";
+import NotFound from "../NotFound";
 
 export const Apartment = () => {
   const { id } = useParams();
   const rightApartment: any = data.find((apartment) => apartment.id === id);
+
+  if (!rightApartment) {
+    return <NotFound />;
+  }
 
   return (
     <main className="apartment">
