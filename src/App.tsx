@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <Header />
       <div>
-        <HashRouter basename="/">
+        <HashRouter basename="/P11-React_KASA">
           <Outlet />
         </HashRouter>
       </div>
